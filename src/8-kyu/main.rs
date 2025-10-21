@@ -172,3 +172,8 @@ fn repeat_str(src: &str, count: usize) -> String {
 fn string_to_array(s: &str) -> Vec<String> {
   s.split(' ').map(|word| word.to_string()).collect()
 }
+
+// You are given two interior angles (in degrees) of a triangle. Write a function to return the 3rd.
+fn other_angle(a: u32, b: u32) -> u32 {
+  180 - a - b
+}
